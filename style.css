@@ -1,4 +1,5 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,7 +31,6 @@ body {
     height: auto;
 }
 
-
 .navbar nav a {
     margin: 0 15px;
     text-decoration: none;
@@ -41,15 +41,14 @@ body {
     background: #1b4d2b;
     color: white;
     border: none;
-    padding: 6px 14px;   
+    padding: 6px 14px;
     display: flex;
     align-items: center;
     gap: 6px;
     cursor: pointer;
-    font-size: 13px;       
-    border-radius: 6px;   
+    font-size: 13px;
+    border-radius: 6px;
 }
-
 
 .call-btn img {
     width: 30px;
@@ -75,7 +74,7 @@ body {
 
 /* Gallery */
 .gallery {
-    padding: 40px 60px 20px; /* top | sides | bottom */
+    padding: 40px 60px 20px;
     text-align: center;
 }
 
@@ -113,74 +112,46 @@ body {
 
 /* About */
 .about {
-    background: url("images/About\ us\ background\ plant.png") no-repeat center/cover;
-   background-size: 110%;
+    background: url("images/About us background plant.png") no-repeat center/cover;
+    background-size: 110%;
     padding: 100px 80px;
     min-height: 450px;
-      display: flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .about-text {
     max-width: 600px;
-    
 }
 
 .about-text h2 {
     font-size: 32px;
     margin-bottom: 15px;
-
 }
 
 .about-text p {
     font-size: 18px;
     line-height: 1.6;
-
 }
-
-
-
 
 /* Why */
 .why {
     text-align: center;
     padding: 100px 60px;
     min-height: 400px;
-
-    background: url("images/final\ background.jpg") no-repeat center/cover;
+    background: url("images/final background.jpg") no-repeat center/cover;
     background-size: 115%;
+}
 
-}   
-
-.why h2{
+.why h2 {
     font-size: 34px;
     margin-bottom: 15px;
-
 }
 
 .why p {
     font-size: 18px;
     line-height: 1.6;
-
-}
-
-
-
-
-
-/* Footer */
-footer {
-    background: #235833;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.socials img {
-    width: 30px;
-    margin: 0 10px;
 }
 
 /* Highlight text */
@@ -202,39 +173,32 @@ footer {
     animation: snakeMove 2s linear infinite;
 }
 
-/* Animation */
 @keyframes snakeMove {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: 40px;
-    }
+    from { background-position-x: 0; }
+    to { background-position-x: 40px; }
 }
 
-
-/* Carousel container */
+/* Carousel */
 .carousel {
-    width: 900px;              /* controls size */
+    width: 900px;
     margin: 40px auto;
     overflow: hidden;
 }
 
-/* Track */
 .carousel-track {
     display: flex;
     gap: 20px;
     transition: transform 0.6s ease;
 }
 
-/* Images */
 .carousel img {
-    width: calc((900px - 40px) / 3); /* exactly 3 images */
+    width: calc((900px - 40px) / 3);
     height: 260px;
     object-fit: cover;
     border-radius: 15px;
 }
 
+/* Footer */
 .footer {
     position: relative;
     background-color: #f7f9f8;
@@ -243,21 +207,14 @@ footer {
     overflow: hidden;
 }
 
-
-
 .footer-container {
     position: relative;
     z-index: 1;
-display: grid;
+    display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
     gap: 40px;
     align-items: start;
-
-
-
-
 }
-
 
 /* Brand */
 .footer-brand img {
@@ -279,6 +236,12 @@ display: grid;
     width: 26px;
     margin-right: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
 }
 
 /* Links */
@@ -299,7 +262,6 @@ display: grid;
 .footer-links a:hover {
     text-decoration: underline;
 }
-
 
 .footer-newsletter p {
     font-size: 14px;
@@ -325,6 +287,11 @@ display: grid;
     padding: 8px 14px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.newsletter-box button:hover {
+    background: #145a2a;
 }
 
 /* Bottom bar */
@@ -335,3 +302,4 @@ display: grid;
     border-top: 1px solid #ccc;
     padding-top: 15px;
 }
+
